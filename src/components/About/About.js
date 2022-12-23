@@ -32,14 +32,11 @@ export default function About() {
             <article className="about_card">
               <VscFolderLibrary className="about_icon" />
               <h5>Projects</h5>
-              <small>20+ Completed</small>
+              <small>5+ Completed</small>
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
-            voluptatum sit eligendi, ducimus veniam magnam dolor laudantium ea
-            incidunt odio cupiditate harum ratione ipsa illum, esse sint
-            asperiores voluptate nam?
+          web developer skilled in HTML, CSS, JavaScript, ReactJs, NodeJs, MongoDB and Persuing a Bachelor Of Computer Application (BCA) Degree from Cotton University
           </p>
 
           <a href="#contact" className="btn btn-primary">Let's Talk</a>

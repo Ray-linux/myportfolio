@@ -3,6 +3,7 @@ import './project.css'
 import IMG1 from '../../assets/project1.png'
 import IMG2 from '../../assets/project2.png'
 import IMG3 from '../../assets/project3.png'
+import IMG4 from '../../assets/project4.png'
 
 
 export default function Project() {
@@ -28,18 +29,28 @@ export default function Project() {
           </div>
           <h3>Tic Tac Toe game using react js</h3>
           <div className="project_item-cta">
-            {/* <a href="https://www.google.com" className='btn' target='_blank'>GitHub</a> */}
-            <a href="https://ray-linux.github.io/tic-tac-toe/" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
+            <a href="https://github.com/Ray-linux/tic-tac-toe" className='btn' target='_blank'>GitHub</a>
+            <a href="https://www.tic-tac-toe-game.ml/" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
           </div>
         </article>
         <article className='project_item'>
           <div className="project_item_image">
             <img src={IMG3} alt="image1" />
           </div>
-          <h3>Weather Application using reactjs and Rapid api</h3>
+          <h3>Weather Application using React JS and Rapid api</h3>
           <div className="project_item-cta">
-            {/* <a href="https://www.google.com" className='btn' target='_blank'>GitHub</a> */}
-            <a href="https://ray-linux.github.io/weather/" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
+            <a href="https://github.com/Ray-linux/weather" className='btn' target='_blank'>GitHub</a>
+            <a href="https://www.weatherdetails.ml/" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
+          </div>
+        </article>
+        <article className='project_item'>
+          <div className="project_item_image">
+            <img src={IMG4} alt="image1" />
+          </div>
+          <h3>Movies details Application using React JS and TMDB APIs</h3>
+          <div className="project_item-cta">
+            <a href="https://github.com/Ray-linux/Movie_application_using_api" className='btn' target='_blank'>GitHub</a>
+            <a href="https://www.graduatemoviewala.ml/" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
           </div>
         </article>
       </div>
