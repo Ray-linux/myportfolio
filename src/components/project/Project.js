@@ -4,55 +4,69 @@ import IMG1 from '../../assets/project1.png'
 import IMG2 from '../../assets/project2.png'
 import IMG3 from '../../assets/project3.png'
 import IMG4 from '../../assets/project4.png'
+import IMG5 from '../../assets/project5.png'
 
 
 export default function Project() {
+  const data = [
+    {
+      id: 1,
+      Image: IMG1, 
+      title: "Analog Clock using HTML, CSS, Javascript",
+      github: 'https://github.com/Ray-linux/Clock',
+      demo:'https://ray-linux.github.io/Clock/',
+    },
+    {
+      id: 2,
+      Image: IMG2, 
+      title: "Tic Tac Toe game using react js",
+      github: 'https://github.com/Ray-linux/tic-tac-toe',
+      demo:'https://www.tic-tac-toe-game.ml/',
+    },
+    {
+      id: 3,
+      Image: IMG3, 
+      title: "Weather Application using React JS and Rapid api",
+      github: 'https://github.com/Ray-linux/weather',
+      demo:'https://www.weatherdetails.ml/',
+    },
+    {
+      id: 4,
+      Image: IMG4, 
+      title: "Movies details Application using React JS and TMDB APIs",
+      github: 'https://github.com/Ray-linux/Movie_application_using_api',
+      demo:'https://www.graduatemoviewala.ml/',
+    },
+    {
+      id: 5,
+      Image: IMG5, 
+      title: "Todo web app using react js(for LGM)",
+      github: 'https://github.com/Ray-linux/to_do',
+      demo:'https://todo-qp2a.onrender.com/',
+    },
+  ]
   return (
     <section id='project'>
       <h5>My Recent Works</h5>
       <h2>Projects</h2>
 
       <div className="container project_container">
-        <article className='project_item'>
-          <div className="project_item_image">
-            <img src={IMG1} alt="image1" />
-          </div>
-          <h3>Analog Clock using HTML, CSS, Javascript</h3>
-          <div className="project_item-cta">
-            <a href="https://github.com/Ray-linux/Clock" className='btn' target='_blank' rel="noreferrer">GitHub</a>
-            <a href="https://ray-linux.github.io/Clock/" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
-          </div>
-        </article>
-        <article className='project_item'>
-          <div className="project_item_image">
-            <img src={IMG2} alt="image1" />
-          </div>
-          <h3>Tic Tac Toe game using react js</h3>
-          <div className="project_item-cta">
-            <a href="https://github.com/Ray-linux/tic-tac-toe" className='btn' target='_blank'>GitHub</a>
-            <a href="https://www.tic-tac-toe-game.ml/" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
-          </div>
-        </article>
-        <article className='project_item'>
-          <div className="project_item_image">
-            <img src={IMG3} alt="image1" />
-          </div>
-          <h3>Weather Application using React JS and Rapid api</h3>
-          <div className="project_item-cta">
-            <a href="https://github.com/Ray-linux/weather" className='btn' target='_blank'>GitHub</a>
-            <a href="https://www.weatherdetails.ml/" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
-          </div>
-        </article>
-        <article className='project_item'>
-          <div className="project_item_image">
-            <img src={IMG4} alt="image1" />
-          </div>
-          <h3>Movies details Application using React JS and TMDB APIs</h3>
-          <div className="project_item-cta">
-            <a href="https://github.com/Ray-linux/Movie_application_using_api" className='btn' target='_blank'>GitHub</a>
-            <a href="https://www.graduatemoviewala.ml/" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
-          </div>
-        </article>
+        {
+          data.map(({id, Image, title, github, demo}) => {
+            return (
+              <article key={id} className='project_item'>
+              <div className="project_item_image">
+                <img src={Image} alt="image1" />
+              </div>
+              <h3>{title}</h3>
+              <div className="project_item-cta">
+                <a href={github} className='btn' target='_blank'>GitHub</a>
+                <a href={demo} className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
+              </div>
+            </article>
+            )
+          })
+        }
       </div>
     </section>
   )
