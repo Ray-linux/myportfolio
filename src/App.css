@@ -1,0 +1,133 @@
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.shape:nth-of-type(1) {
+    width: 400px;
+    height: 400px;
+    background: #97affd50;
+    animation: wave 8s ease-in-out infinite;
+    position: absolute;
+    top: 60vh;
+    right: 15%;
+}
+.shape:nth-of-type(2) {
+    width: 800px;
+    height: 800px;
+    background: #7998ff;
+    position: absolute;
+    top: -200px;
+    left: -400px;
+    opacity: .2;
+    z-index: -1;
+    animation: wave 5s ease-in-out infinite;
+}
+.shape:nth-of-type(3) {
+    width: 400px;
+    height: 400px;
+    background: #37ffde7a;
+    position: absolute;
+    /* bottom: -25%; */
+    top: 180vh;
+    left: 30vw;
+    opacity: .3;
+    z-index: -1;
+    animation: wave 12s ease-in-out infinite;
+}
+.shape:nth-of-type(4) {
+    width: 250px;
+    height: 250px;
+    background: #fbff0d2c;
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    opacity: .4;
+    z-index: -1;
+    animation: wave 6s ease-in-out infinite;
+}
+.shape:nth-of-type(5) {
+    width: 350px;
+    height: 350px;
+    background: #a1b6fd83;
+    position: absolute;
+    top: 200vh;
+    right: 4%;
+    opacity: .2;
+    z-index: -1;
+    animation: wave 15s ease-in-out infinite;
+}
+.shape:nth-of-type(6) {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    background: #3df1ac83;
+    top: 690vh;
+    right: 30%;
+    opacity: .2;
+    z-index: -1;
+    transform: rotate(90deg);
+    animation: wave 15s ease-in-out infinite;
+}
+.shape:nth-of-type(7) {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    background: #3da0f183;
+    top: 300vh;
+    left: -5%;
+    opacity: .5;
+    z-index: -1;
+    transform: rotate(190deg);
+    animation: wave 15s ease-in-out infinite;
+}
+.shape:nth-of-type(8) {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: #084b35c0;
+    top: 310vh;
+    right: 5%;
+    opacity: .5;
+    z-index: -1;
+    transform: rotate(90deg);
+    animation: wave 15s ease-in-out infinite;
+}
+.shape:nth-of-type(9) {
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    background: #3d58f133;
+    top: 400%;
+    right: 50%;
+    opacity: .5;
+    z-index: -1;
+    transform: rotate(90deg);
+    animation: wave 15s ease-in-out infinite;
+}
+.shape:nth-of-type(10) {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: #3df1ac83;
+    top: 7%;
+    right: 5%;
+    opacity: .5;
+    z-index: -1;
+    transform: rotate(90deg);
+    animation: wave 15s ease-in-out infinite;
+}
+@keyframes wave {
+    0%, 100% {
+        border-radius: 66% 34% 37% 63% / 57% 31% 69% 43%;
+    }
+    50%{
+        border-radius: 26% 74% 51% 49% / 22% 53% 47% 78%;
+    }
+}

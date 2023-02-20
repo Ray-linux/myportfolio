@@ -9,20 +9,31 @@ import Services from "./components/services/Services";
 import Education from "./components/education/Education";
 import Project from "./components/project/Project";
 
-
-
-
 function App() {
   return (
     <>
-    <Header/>
-    <Nav/>
-    <About/>
-    <Education/>
-    <Experiances/>
-    <Project/>
-    <Contect/>
-    <Footer/>
+      <div class="row-outer">
+        <div class="wrapper">
+          <span class="shape"></span>
+          <span class="shape"></span>
+          <span class="shape"></span>
+          <span class="shape"></span>
+          <span class="shape"></span>
+          <span class="shape"></span>
+          <span class="shape"></span>
+          <span class="shape"></span>
+          <span class="shape"></span>
+          <span class="shape"></span>
+        </div>
+      </div>
+      <Header />
+      <Nav />
+      <About />
+      <Education />
+      <Experiances />
+      <Project />
+      <Contect />
+      <Footer />
     </>
   );
 }
