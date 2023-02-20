@@ -5,7 +5,7 @@ import About from "./components/About/About";
 import Experiances from "./components/experiance/Experiance";
 import Contect from "./components/Contect/Contect";
 import Footer from "./components/footer/Footer";
-import Services from "./components/services/Services";
+// import Services from "./components/services/Services";
 import Education from "./components/education/Education";
 import Project from "./components/project/Project";
 

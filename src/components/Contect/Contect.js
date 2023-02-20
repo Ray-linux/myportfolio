@@ -60,8 +60,8 @@ export default function Contect() {
             </a>
           </article>
         </div>
-        {/* <form ref={form} onSubmit={sendEmail}> */}
-        <form ref={form} onSubmit="#">
+        <form ref={form} onSubmit={sendEmail}>
+        {/* <form ref={form} onSubmit="#"> */}
           <input
             type="text"
             name="name"
