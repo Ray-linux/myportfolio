@@ -77,19 +77,19 @@ header{
 
 @media screen and (max-width: 1024px) {
     header{
-        height:  150vh;
+        height:  68vh;
 
     }
 }
 
 @media screen and (max-width: 600px) {
     header{
-        height: 130vh;
+        height: 100vh;
     }
-    .me{
+    /* .me{
         width: 20rem;
         margin-left: 30px;
-    }
+    } */
 
     .header_socials, .scroll_down{
         display: none;
