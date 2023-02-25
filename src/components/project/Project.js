@@ -5,7 +5,7 @@ import IMG2 from '../../assets/project2.png'
 import IMG3 from '../../assets/project3.png'
 import IMG4 from '../../assets/project4.png'
 import IMG5 from '../../assets/project5.png'
-
+import IMG6 from '../../assets/project6.png'
 
 export default function Project() {
   const data = [
@@ -43,6 +43,13 @@ export default function Project() {
       title: "Todo web app using react js(for LGM)",
       github: 'https://github.com/Ray-linux/to_do',
       demo:'https://todo-qp2a.onrender.com/',
+    },
+    {
+      id: 6,
+      Image: IMG6, 
+      title: "calculator using react js(for LGM)",
+      github: 'https://github.com/Ray-linux/Calculator2.0',
+      demo:'https://calculator-9auj.onrender.com/',
     },
   ]
   return (
